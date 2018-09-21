@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2D40D7B921559FDD00CAC82C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D40D7B821559FDD00CAC82C /* AppDelegate.swift */; };
-		2D40D7BB21559FDD00CAC82C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D40D7BA21559FDD00CAC82C /* ViewController.swift */; };
 		2D40D7BE21559FDD00CAC82C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D40D7BC21559FDD00CAC82C /* Main.storyboard */; };
 		2D40D7C021559FE000CAC82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D40D7BF21559FE000CAC82C /* Assets.xcassets */; };
 		2D40D7C321559FE000CAC82C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D40D7C121559FE000CAC82C /* LaunchScreen.storyboard */; };
-		2D40D7CE21559FE000CAC82C /* ProtocalTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D40D7CD21559FE000CAC82C /* ProtocalTestTests.swift */; };
-		2D40D7D921559FE000CAC82C /* ProtocalTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D40D7D821559FE000CAC82C /* ProtocalTestUITests.swift */; };
+		2D40D7EB2155A2CA00CAC82C /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D40D7EA2155A2CA00CAC82C /* ParentViewController.swift */; };
+		2D40D7ED2155A2D700CAC82C /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D40D7EC2155A2D700CAC82C /* ChildViewController.swift */; };
+		2D40D7EF2155B39100CAC82C /* updateParentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D40D7EE2155B39100CAC82C /* updateParentDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +36,15 @@
 /* Begin PBXFileReference section */
 		2D40D7B521559FDD00CAC82C /* ProtocalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D40D7B821559FDD00CAC82C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D40D7BA21559FDD00CAC82C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D40D7BD21559FDD00CAC82C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D40D7BF21559FE000CAC82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D40D7C221559FE000CAC82C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D40D7C421559FE000CAC82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D40D7C921559FE000CAC82C /* ProtocalTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocalTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D40D7CD21559FE000CAC82C /* ProtocalTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocalTestTests.swift; sourceTree = "<group>"; };
-		2D40D7CF21559FE000CAC82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D40D7D421559FE000CAC82C /* ProtocalTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocalTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D40D7D821559FE000CAC82C /* ProtocalTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocalTestUITests.swift; sourceTree = "<group>"; };
-		2D40D7DA21559FE000CAC82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D40D7EA2155A2CA00CAC82C /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		2D40D7EC2155A2D700CAC82C /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		2D40D7EE2155B39100CAC82C /* updateParentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateParentDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				2D40D7B721559FDD00CAC82C /* ProtocalTest */,
-				2D40D7CC21559FE000CAC82C /* ProtocalTestTests */,
-				2D40D7D721559FE000CAC82C /* ProtocalTestUITests */,
 				2D40D7B621559FDD00CAC82C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,31 +94,15 @@
 			isa = PBXGroup;
 			children = (
 				2D40D7B821559FDD00CAC82C /* AppDelegate.swift */,
-				2D40D7BA21559FDD00CAC82C /* ViewController.swift */,
 				2D40D7BC21559FDD00CAC82C /* Main.storyboard */,
 				2D40D7BF21559FE000CAC82C /* Assets.xcassets */,
 				2D40D7C121559FE000CAC82C /* LaunchScreen.storyboard */,
 				2D40D7C421559FE000CAC82C /* Info.plist */,
+				2D40D7EA2155A2CA00CAC82C /* ParentViewController.swift */,
+				2D40D7EC2155A2D700CAC82C /* ChildViewController.swift */,
+				2D40D7EE2155B39100CAC82C /* updateParentDelegate.swift */,
 			);
 			path = ProtocalTest;
-			sourceTree = "<group>";
-		};
-		2D40D7CC21559FE000CAC82C /* ProtocalTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				2D40D7CD21559FE000CAC82C /* ProtocalTestTests.swift */,
-				2D40D7CF21559FE000CAC82C /* Info.plist */,
-			);
-			path = ProtocalTestTests;
-			sourceTree = "<group>";
-		};
-		2D40D7D721559FE000CAC82C /* ProtocalTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2D40D7D821559FE000CAC82C /* ProtocalTestUITests.swift */,
-				2D40D7DA21559FE000CAC82C /* Info.plist */,
-			);
-			path = ProtocalTestUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D40D7BB21559FDD00CAC82C /* ViewController.swift in Sources */,
+				2D40D7EB2155A2CA00CAC82C /* ParentViewController.swift in Sources */,
+				2D40D7EF2155B39100CAC82C /* updateParentDelegate.swift in Sources */,
 				2D40D7B921559FDD00CAC82C /* AppDelegate.swift in Sources */,
+				2D40D7ED2155A2D700CAC82C /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D40D7CE21559FE000CAC82C /* ProtocalTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D40D7D921559FE000CAC82C /* ProtocalTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
